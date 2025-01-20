@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="771e-f644-a464-d479" name="Epic40k (Mixed)" revision="1" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="771e-f644-a464-d479" name="NR-EA-Ragnarok" revision="1" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="56fe-b625-1acc-3460" name="NetEA" shortName="NetEA" publisher="Net Epic Armageddon Tournament Pack" publisherUrl="https://tp.net-armageddon.org/"/>
     <publication id="7192-2a1a-dc2a-4aa8" name="Epic UK" publisherUrl="http://epic-uk.co.uk/wp/army-lists/"/>
@@ -208,7 +208,7 @@ Infantry are affect by Anti-Personnel (AP) weapons.</description>
       <alias>Left</alias>
     </rule>
     <rule name="Titanic Walker" id="f5b9-d2c2-6430-c133" hidden="false">
-      <description> May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide. </description>
+      <description>May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide.</description>
     </rule>
     <rule name="Disrupt" id="2fcf-11fa-db43-1fb6" hidden="false">
       <description>Weapons with Disrupt inflict blast markers on successful hits, rather than kills.</description>
@@ -222,9 +222,7 @@ Infantry are affect by Anti-Personnel (AP) weapons.</description>
 Void shields that have been knocked down can be repaired. Each War Engine can repair one downed Void Shield in the End Phase of each turn.
 
 
-In addition, if a War Engine regroups (either by performing a Hold or a Marshal action) it can use the dice roll both to repair Void Shields and remove Blast Markers. However, only half the points generated (fractions rounded up) may be spent on restoring Void Shields (e.g. if you rolled a 3 you could remove three Blast Markers, or repair two Void Shields and remove one Blast Marker).
-
-</description>
+In addition, if a War Engine regroups (either by performing a Hold or a Marshal action) it can use the dice roll both to repair Void Shields and remove Blast Markers. However, only half the points generated (fractions rounded up) may be spent on restoring Void Shields (e.g. if you rolled a 3 you could remove three Blast Markers, or repair two Void Shields and remove one Blast Marker).</description>
     </rule>
     <rule name="Right Arc" id="731a-9a56-26b1-10a6" hidden="false">
       <description>May only fire in 180 degree right arc</description>
@@ -235,7 +233,7 @@ In addition, if a War Engine regroups (either by performing a Hold or a Marshal 
     </rule>
     <rule name="Slow Firing" id="5923-24b9-fe88-3801" hidden="false">
       <alias>Slow</alias>
-      <description> These weapons must take one turn to reload after they have fired. This means that if they fire on one turn they may not fire during the next. </description>
+      <description>These weapons must take one turn to reload after they have fired. This means that if they fire on one turn they may not fire during the next.</description>
     </rule>
   </sharedRules>
 </gameSystem>
