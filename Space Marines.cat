@@ -1938,9 +1938,9 @@
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <localConditionGroups>
-            <localConditionGroup type="atLeast" value="1" scope="parent" field="selections" includeChildSelections="true" includeChildForces="true" repeats="1">
+            <localConditionGroup type="atLeast" value="1" scope="roster" field="selections" includeChildSelections="true" includeChildForces="true" repeats="1">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="6f6c-c0af-4fd0-1f05" shared="true" includeChildSelections="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="6f6c-c0af-4fd0-1f05" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </localConditionGroup>
           </localConditionGroups>
