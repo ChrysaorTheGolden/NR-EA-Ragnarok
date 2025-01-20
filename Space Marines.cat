@@ -16,13 +16,15 @@
     <categoryEntry name="Collegia Titanica" id="51fa-6eb3-c418-1efe" hidden="false"/>
     <categoryEntry name="Imperial Navy" id="3235-f560-5b5c-876e" hidden="false"/>
     <categoryEntry name="Codex Astartes Navy" id="6efc-d58c-a102-abd4" hidden="false"/>
+    <categoryEntry name="Support Packs" id="20c4-f148-b275-902f" hidden="false">
+      <comment>Space Wolves</comment>
+    </categoryEntry>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry id="4cc0-b1ed-b546-15b1" name="Tactical Marines" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink name="Tacticals" id="6aed-8de7-3385-6d24" hidden="false" targetId="b35e-e9cf-4e4e-ed2a" type="profile"/>
         <infoLink name="Missile Launcher" id="acfd-1681-21d2-1beb" hidden="false" targetId="55cd-e342-d0d7-c547" type="profile"/>
-        <infoLink name="They Shall Know No Fear" id="29a3-4084-c8ac-026b" hidden="false" type="rule" targetId="ed2a-e870-1533-2fe8"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Tactical Marines" hidden="false" id="c8cf-6b33-d876-7520" defaultAmount="6" sortIndex="1" collective="true">
@@ -47,20 +49,8 @@
             <selectionEntryGroup name="Transports" id="38dd-47b2-84f1-1dd8" hidden="false" sortIndex="4" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Free Transport" hidden="false" id="572d-0cfa-7a9c-a747" type="selectionEntryGroup" targetId="afed-582d-1f32-e9b4" sortIndex="1" collapsible="false"/>
+                <entryLink import="true" name="Heavy Transports" hidden="false" id="0144-a40e-8c2b-a663" type="selectionEntryGroup" targetId="65f1-9c0a-f87d-ca00" sortIndex="2"/>
               </entryLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Upgraded Transports" id="0a2a-cad9-f6dd-053d" hidden="false" sortIndex="2" collapsible="false">
-                  <entryLinks>
-                    <entryLink import="true" name="Land Raider" hidden="false" id="e988-2566-89be-ec4a" type="selectionEntry" targetId="b94f-b1fb-d737-ed74" collective="true" defaultAmount="0" sortIndex="3">
-                      <costs>
-                        <cost name="Points" typeId="45b2-f090-db05-c5d9" value="50"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Razorback w/Twin Heavy Bolter" hidden="false" id="dee8-20ec-6c51-fac2" type="selectionEntry" targetId="8da4-f805-b1f3-c7bb" sortIndex="1"/>
-                    <entryLink import="true" name="Razorback w/Twin Lascannon" hidden="false" id="fcd1-a404-feb7-e247" type="selectionEntry" targetId="a066-56b9-dfe8-0350" sortIndex="2"/>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="306a-dd28-bbee-84ce"/>
               </constraints>
@@ -344,7 +334,6 @@
       <infoLinks>
         <infoLink name="Devastators" id="961e-c07c-ecae-2609" hidden="false" targetId="56cf-209f-4389-ee87" type="profile"/>
         <infoLink name="Missile Launcher" id="d933-486a-78bc-5abb" hidden="false" targetId="55cd-e342-d0d7-c547" type="profile"/>
-        <infoLink name="They Shall Know No Fear" id="64cf-a7e2-1aa6-655d" hidden="false" type="rule" targetId="ed2a-e870-1533-2fe8"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Devastator Marines" hidden="false" id="217b-304f-3fc9-35af" defaultAmount="4" sortIndex="1" collective="true">
@@ -369,22 +358,10 @@
             <selectionEntryGroup name="Transports" id="1f69-9ec5-0dc9-1cd5" hidden="false" sortIndex="4">
               <entryLinks>
                 <entryLink import="true" name="Free Transport" hidden="false" id="2ac1-570b-b5c2-7f26" type="selectionEntryGroup" targetId="afed-582d-1f32-e9b4" sortIndex="1"/>
+                <entryLink import="true" name="Heavy Transports" hidden="false" id="5dff-075e-2e11-7b9c" type="selectionEntryGroup" targetId="65f1-9c0a-f87d-ca00" sortIndex="2"/>
               </entryLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Upgraded Transports" id="188c-0264-9c8a-a828" hidden="false" sortIndex="2">
-                  <entryLinks>
-                    <entryLink import="true" name="Land Raider" hidden="false" id="6b13-474a-b88d-7c7b" type="selectionEntry" targetId="b94f-b1fb-d737-ed74" collective="true" defaultAmount="0" sortIndex="3">
-                      <costs>
-                        <cost name="Points" typeId="45b2-f090-db05-c5d9" value="50"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Razorback w/Twin Heavy Bolter" hidden="false" id="4bff-ea6a-74ef-972b" type="selectionEntry" targetId="8da4-f805-b1f3-c7bb" sortIndex="1"/>
-                    <entryLink import="true" name="Razorback w/Twin Lascannon" hidden="false" id="580d-db23-5a46-451d" type="selectionEntry" targetId="a066-56b9-dfe8-0350" sortIndex="2"/>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
               <constraints>
-                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7919-b1bf-31f9-3bec"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7919-b1bf-31f9-3bec"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -712,7 +689,7 @@
         </profile>
         <profile name="Warhound Titan" typeId="01ad-b172-3746-07c4" typeName="Critical Damage" hidden="false" id="cd30-208f-f45f-6b5f">
           <characteristics>
-            <characteristic name="Effect" typeId="0c40-c40f-b4ae-46f9">The unit takes a point of damage. </characteristic>
+            <characteristic name="Effect" typeId="0c40-c40f-b4ae-46f9">The unit takes a point of damage.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -729,7 +706,7 @@
       <profiles>
         <profile name="Landing Craft" typeId="01ad-b172-3746-07c4" typeName="Critical Damage" hidden="false" id="0806-be37-053b-92bf">
           <characteristics>
-            <characteristic name="Effect" typeId="0c40-c40f-b4ae-46f9">The Landing Craft and all units being carried are destroyed. All units within 5cm suffer a hit. </characteristic>
+            <characteristic name="Effect" typeId="0c40-c40f-b4ae-46f9">The Landing Craft and all units being carried are destroyed. All units within 5cm suffer a hit.</characteristic>
           </characteristics>
         </profile>
         <profile name="Landing Craft" typeId="5a0a-4615-39e2-6420" typeName="Transport" hidden="false" id="2b9c-6975-f016-85c0">
@@ -801,7 +778,7 @@
       <profiles>
         <profile name="Thunderhawk" typeId="01ad-b172-3746-07c4" typeName="Critical Damage" hidden="false" id="17b9-eeef-d5a4-3a24">
           <characteristics>
-            <characteristic name="Effect" typeId="0c40-c40f-b4ae-46f9">The Thunderhawk and all units being carried are destroyed. </characteristic>
+            <characteristic name="Effect" typeId="0c40-c40f-b4ae-46f9">The Thunderhawk and all units being carried are destroyed.</characteristic>
           </characteristics>
         </profile>
         <profile name="Thunderhawk" typeId="5a0a-4615-39e2-6420" typeName="Transport" hidden="false" id="1421-5ce7-9fc7-d707">
@@ -886,7 +863,7 @@
         </profile>
         <profile name="Reaver Titan" typeId="01ad-b172-3746-07c4" typeName="Critical Damage" hidden="false" id="af97-a1ba-3f8c-d586">
           <characteristics>
-            <characteristic name="Effect" typeId="0c40-c40f-b4ae-46f9">The plasma reactor has been breached. Roll a D6 for each breach on the unit in the End Phase of each turn. On a roll of 1 the unit is destroyed and all units within 5cm suffer a hit on a roll of 5+, and on a roll of 4–6 the breach has been repaired. Any breach not repaired causes one point of damage. </characteristic>
+            <characteristic name="Effect" typeId="0c40-c40f-b4ae-46f9">The plasma reactor has been breached. Roll a D6 for each breach on the unit in the End Phase of each turn. On a roll of 1 the unit is destroyed and all units within 5cm suffer a hit on a roll of 5+, and on a roll of 4–6 the breach has been repaired. Any breach not repaired causes one point of damage.</characteristic>
           </characteristics>
         </profile>
         <profile name="Turbo-Laser Destructor" typeId="ebd7-f24b-8ac6-42eb" typeName="Weapons (Ranged)" hidden="false" id="ee90-ad9c-989f-4490">
@@ -910,6 +887,80 @@
       <infoLinks>
         <infoLink name="Titanic Walker" id="f2a6-e50b-ea00-70ca" hidden="false" type="rule" targetId="f5b9-d2c2-6430-c133"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Hunting Pack" hidden="false" id="f438-d899-5297-0bdf" collective="false">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Grey Hunters" hidden="false" id="d600-c026-ba30-fe42" defaultAmount="6" sortIndex="1" collective="true">
+          <constraints>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="2e2b-29ca-1756-a8fb"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="8ae6-b7cd-321d-c73f"/>
+          </constraints>
+          <profiles>
+            <profile name="Grey Hunter Tacticals" typeId="b57a-98c9-41e0-f24b" typeName="Model" hidden="false" id="055d-2f48-283e-b282">
+              <characteristics>
+                <characteristic name="Type" typeId="f15c-6890-7575-651e">Infantry</characteristic>
+                <characteristic name="Speed" typeId="165b-58c0-5ac3-6c50">15cm</characteristic>
+                <characteristic name="Armour" typeId="bc25-cf0e-2234-f5d9">4+</characteristic>
+                <characteristic name="CC" typeId="9212-a727-3a1f-ce25">3+</characteristic>
+                <characteristic name="FF" typeId="da0f-a17a-310b-b709">4+</characteristic>
+                <characteristic name="Rules" typeId="07bd-6d55-5c19-bcc6"/>
+                <characteristic name="Equipment" typeId="3eb0-890a-3b3a-338f">Bolters, Chainswords</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Wolf Standard Bearer" typeId="b5d2-60ca-a5d3-1b33" typeName="Character" hidden="false" id="b9c6-dab3-a4e2-9504">
+              <characteristics>
+                <characteristic name="Abilities" typeId="64c6-a488-83d6-6c14">Invulnerable Save, Leader</characteristic>
+                <characteristic name="Equipment" typeId="c08d-dd74-0eb9-41c8"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Points" typeId="45b2-f090-db05-c5d9" value="275"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="c475-3e19-c5f1-d6e3" hidden="false" sortIndex="2" collapsible="true">
+          <entryLinks>
+            <entryLink import="true" name="Anti-Air" hidden="false" id="d18d-3f6f-cd27-1a2e" type="selectionEntryGroup" targetId="31ea-25f2-b67f-d702" sortIndex="2" collapsible="true"/>
+            <entryLink import="true" name="Dreadnoughts" hidden="false" id="8bf1-6f6e-adb4-e1fd" type="selectionEntryGroup" targetId="0569-6a19-dad3-5cd0" sortIndex="3" collapsible="true"/>
+            <entryLink import="true" name="Vindicators" hidden="false" id="fddf-269f-07d3-4900" type="selectionEntryGroup" targetId="7c73-dc99-42a4-79da" sortIndex="5"/>
+            <entryLink import="true" name="Space Wolf Command" hidden="false" id="a9e4-07db-bf20-6a5f" type="selectionEntryGroup" targetId="603c-387b-51fc-c74d" sortIndex="1"/>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Transports" id="b3d9-dfbd-f604-0c81" hidden="false" sortIndex="4" collapsible="true">
+              <entryLinks>
+                <entryLink import="true" name="Free Transport" hidden="false" id="59bd-179b-a185-9bbc" type="selectionEntryGroup" targetId="afed-582d-1f32-e9b4" sortIndex="1" collapsible="false"/>
+                <entryLink import="true" name="Heavy Transports" hidden="false" id="2fc7-c719-6202-97c9" type="selectionEntryGroup" targetId="65f1-9c0a-f87d-ca00"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="b083-cbdf-78fd-94c5"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <comment>Space Wolves</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Wolf Lord" hidden="false" id="e886-605c-6d80-f4c3">
+      <infoLinks>
+        <infoLink name="Power Weapon" id="dd1c-bb3b-088a-d439" hidden="false" type="profile" targetId="553e-3573-179b-9cc6"/>
+        <infoLink name="Character" id="153b-4b9d-c679-89fb" hidden="false" type="rule" targetId="4b50-0425-6de5-ac05"/>
+        <infoLink name="Commander" id="7db0-8979-1d1f-ca2f" hidden="false" type="rule" targetId="5bc2-2deb-dc55-f2be"/>
+        <infoLink name="Invulnerable Save" id="0afb-60bc-43f3-b41c" hidden="false" type="rule" targetId="3394-48a4-e29d-1796"/>
+        <infoLink name="Leader" id="0e12-8db2-b267-c16e" hidden="false" type="rule" targetId="c7b2-5495-0807-35d7"/>
+        <infoLink name="Macro Weapon" id="3c49-4885-61d0-1a5f" hidden="false" type="rule" targetId="a840-e70c-b9d0-8fae"/>
+        <infoLink name="Extended Command" id="bfdb-e386-4dd7-e510" hidden="false" type="rule" targetId="d6b7-bd59-2d7a-d17a"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Wolf Lord" typeId="b5d2-60ca-a5d3-1b33" typeName="Character" hidden="false" id="dfdc-2dbb-8b05-e9ce">
+          <characteristics>
+            <characteristic name="Abilities" typeId="64c6-a488-83d6-6c14">Commander, Extended Command, Invulnerable Save, Leader. </characteristic>
+            <characteristic name="Equipment" typeId="c08d-dd74-0eb9-41c8">Power Weapon</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <comment>Space Wolves</comment>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -1079,6 +1130,164 @@
       </selectionEntries>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f92c-76a4-42ae-7421" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Space Wolf Command" id="603c-387b-51fc-c74d" hidden="false" defaultSelectionEntryId="daa4-653a-94f4-21ed" collapsible="true">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Great Wolf" hidden="false" id="4e92-f89e-2066-b28e" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="572f-cd58-2071-f11b" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Power Weapon" id="d27a-64af-19f1-cb74" hidden="false" type="profile" targetId="553e-3573-179b-9cc6"/>
+            <infoLink name="Character" id="4ac3-ac25-7d2c-2247" hidden="false" type="rule" targetId="4b50-0425-6de5-ac05"/>
+            <infoLink name="Commander" id="f5ad-5eba-9d27-637e" hidden="false" type="rule" targetId="5bc2-2deb-dc55-f2be"/>
+            <infoLink name="Invulnerable Save" id="53e5-976a-ef23-15ae" hidden="false" type="rule" targetId="3394-48a4-e29d-1796"/>
+            <infoLink name="Leader" id="7dc5-23fb-5963-bee6" hidden="false" type="rule" targetId="c7b2-5495-0807-35d7"/>
+            <infoLink name="Macro Weapon" id="7e96-c0f7-a112-9567" hidden="false" type="rule" targetId="a840-e70c-b9d0-8fae"/>
+            <infoLink name="Supreme Commander" id="d29b-794a-c889-c3f7" hidden="false" type="rule" targetId="dc0b-cfc2-0a1c-80e9"/>
+            <infoLink name="Extended Command" id="ca22-105f-e551-ccdc" hidden="false" type="rule" targetId="d6b7-bd59-2d7a-d17a"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Wolf Lord" typeId="b5d2-60ca-a5d3-1b33" typeName="Character" hidden="false" id="1b56-4662-4ddf-0e0e">
+              <characteristics>
+                <characteristic name="Abilities" typeId="64c6-a488-83d6-6c14">Supreme Commander, Extended Command, Invulnerable Save</characteristic>
+                <characteristic name="Equipment" typeId="c08d-dd74-0eb9-41c8">Power Weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Wolf Lord" hidden="false" id="daa4-653a-94f4-21ed" type="selectionEntry" targetId="e886-605c-6d80-f4c3" sortIndex="1"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="00b2-0416-fbd2-b742-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="00b2-0416-fbd2-b742-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Heavy Transports" id="65f1-9c0a-f87d-ca00" hidden="false" collapsible="false">
+      <entryLinks>
+        <entryLink import="true" name="Razorback w/Twin Heavy Bolter" hidden="false" id="2a1f-0390-ddad-0efe" type="selectionEntry" targetId="8da4-f805-b1f3-c7bb"/>
+        <entryLink import="true" name="Razorback w/Twin Lascannon" hidden="false" id="55da-e102-0adb-da6c" type="selectionEntry" targetId="a066-56b9-dfe8-0350"/>
+        <entryLink import="true" name="Land Raider" hidden="false" id="8e74-39cc-d587-2baf" type="selectionEntry" targetId="b94f-b1fb-d737-ed74" collective="true" defaultAmount="0">
+          <costs>
+            <cost name="Points" typeId="45b2-f090-db05-c5d9" value="50"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <comment>Upgrade</comment>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Wolf Dreadnoughts" id="9eaa-bbf0-0e47-1876" hidden="false" defaultSelectionEntryId="none" collapsible="true">
+      <comment>Space Wolves Upgrade</comment>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Deadnought" hidden="false" id="fa4f-e800-d6cf-a6a2" sortIndex="1">
+          <costs>
+            <cost name="Points" typeId="45b2-f090-db05-c5d9" value="50"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Assault Cannon" id="8031-b3c5-3e16-4e53" hidden="false" type="profile" targetId="6ebd-44bf-ef52-feb6"/>
+            <infoLink name="Dreadnought" id="6718-d2d0-f0d4-7a7f" hidden="false" type="profile" targetId="c129-2f65-d2af-71de"/>
+            <infoLink name="Power Fist" id="1998-32aa-e3eb-8c11" hidden="false" type="profile" targetId="a078-7bd5-b944-cd5f"/>
+            <infoLink name="Walker" id="d6a1-48be-86db-8907" hidden="false" type="rule" targetId="2c55-dcf2-96fa-6f25"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Wulfen Deadnought" hidden="false" id="22ee-2819-1f8d-1ab9">
+          <costs>
+            <cost name="Points" typeId="45b2-f090-db05-c5d9" value="75"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Walker" id="5e70-ac15-aa79-aaf7" hidden="false" type="rule" targetId="2c55-dcf2-96fa-6f25"/>
+            <infoLink name="Fearless" id="81ba-9006-aa86-3dd5" hidden="false" type="rule" targetId="342a-4f46-30c4-991f"/>
+            <infoLink name="Infiltrators" id="1f66-d172-6b23-3075" hidden="false" type="rule" targetId="a98f-08c6-6a07-a10d"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Wulfen Deadnought" typeId="b57a-98c9-41e0-f24b" typeName="Model" hidden="false" id="0cb2-63e8-32b5-369d">
+              <characteristics>
+                <characteristic name="Type" typeId="f15c-6890-7575-651e">AV</characteristic>
+                <characteristic name="Speed" typeId="165b-58c0-5ac3-6c50">15cm</characteristic>
+                <characteristic name="Armour" typeId="bc25-cf0e-2234-f5d9">3+</characteristic>
+                <characteristic name="CC" typeId="9212-a727-3a1f-ce25">3+</characteristic>
+                <characteristic name="FF" typeId="da0f-a17a-310b-b709">3+</characteristic>
+                <characteristic name="Rules" typeId="07bd-6d55-5c19-bcc6">Fearless, Infiltrators, Walker</characteristic>
+                <characteristic name="Equipment" typeId="3eb0-890a-3b3a-338f">Helfrost Cannon, Great Wolf Claw</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Helfrost Cannon" typeId="ad8d-0895-d202-55c4" typeName="Weapons (Small Arms)" hidden="false" id="ab15-e8e2-1f88-b798">
+              <characteristics>
+                <characteristic name="Extra Atks" typeId="5841-f3b0-34d7-ccae"/>
+                <characteristic name="Abilities" typeId="5022-1951-b56e-443b">MW</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Great Wolf Claw" typeId="ec46-6d18-f9bd-7ebb" typeName="Weapons (Assault)" hidden="false" id="70f3-bb16-ea53-cc66">
+              <characteristics>
+                <characteristic name="Extra Atks" typeId="1d83-780b-2b25-0c16">+1</characteristic>
+                <characteristic name="Abilities" typeId="2383-92bb-359b-1b16">MW</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="420b-dcdf-f070-28c7" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Fenrisian Wolves" id="c1ad-6e59-bfaa-03dc" hidden="false">
+      <comment>Space Wolves Upgrade</comment>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Fenrisian Wolves" hidden="false" id="9544-3002-50b7-c197" defaultAmount="0" collective="true">
+          <costs>
+            <cost name="Points" typeId="45b2-f090-db05-c5d9" value="25"/>
+          </costs>
+          <profiles>
+            <profile name="Fenrisian Wolves" typeId="b57a-98c9-41e0-f24b" typeName="Model" hidden="false" id="bfb8-1e31-6093-7c6e">
+              <characteristics>
+                <characteristic name="Type" typeId="f15c-6890-7575-651e">Infantry</characteristic>
+                <characteristic name="Speed" typeId="165b-58c0-5ac3-6c50">35cm</characteristic>
+                <characteristic name="Armour" typeId="bc25-cf0e-2234-f5d9">5+</characteristic>
+                <characteristic name="CC" typeId="9212-a727-3a1f-ce25">3+</characteristic>
+                <characteristic name="FF" typeId="da0f-a17a-310b-b709"/>
+                <characteristic name="Rules" typeId="07bd-6d55-5c19-bcc6"/>
+                <characteristic name="Equipment" typeId="3eb0-890a-3b3a-338f">Claws and Fangs</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="93c8-811c-9534-f392" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Leman Russ" id="177b-9be6-4d6d-80cb" hidden="false" collapsible="true">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Exterminator" hidden="false" id="ce2a-88c4-aefa-d942" collective="true" defaultAmount="0">
+          <profiles>
+            <profile name="Leman Russ Exterminator" typeId="b57a-98c9-41e0-f24b" typeName="Model" hidden="false" id="2535-1be2-0cd3-b77b">
+              <characteristics>
+                <characteristic name="Type" typeId="f15c-6890-7575-651e">AV</characteristic>
+                <characteristic name="Speed" typeId="165b-58c0-5ac3-6c50">20cm</characteristic>
+                <characteristic name="Armour" typeId="bc25-cf0e-2234-f5d9">4+</characteristic>
+                <characteristic name="CC" typeId="9212-a727-3a1f-ce25">6+</characteristic>
+                <characteristic name="FF" typeId="da0f-a17a-310b-b709">4+</characteristic>
+                <characteristic name="Rules" typeId="07bd-6d55-5c19-bcc6">Reinforced Armour</characteristic>
+                <characteristic name="Equipment" typeId="3eb0-890a-3b3a-338f">Twin Autocannon, Heavy Flamer, 2x Heavy Bolter</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Heavy Bolter" id="33e0-e19c-860b-7d13" hidden="false" type="profile" targetId="1a01-23cd-e6b3-91d0"/>
+            <infoLink name="Heavy Flamer" id="6794-1ca6-5fe1-b3f1" hidden="false" type="profile" targetId="6788-e4f0-37ac-082a"/>
+            <infoLink name="Heavy Flamer" id="1dc0-cbd6-68b4-48bf" hidden="false" type="profile" targetId="c93c-ca4a-db85-c6e5"/>
+            <infoLink name="Twin Autocannon" id="4529-149f-0a5d-b662" hidden="false" type="profile" targetId="49f2-91c7-e6cb-0e29"/>
+            <infoLink name="Reinforced Armour" id="50d8-5526-9cad-6036" hidden="false" type="rule" targetId="7106-9e84-e7c1-ed44"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="45b2-f090-db05-c5d9" value="50"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7300-2221-3417-324f" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
@@ -1594,15 +1803,41 @@
         <characteristic name="Armour" typeId="bc25-cf0e-2234-f5d9">4+</characteristic>
         <characteristic name="CC" typeId="9212-a727-3a1f-ce25">6+</characteristic>
         <characteristic name="FF" typeId="da0f-a17a-310b-b709">4+</characteristic>
-        <characteristic name="Rules" typeId="07bd-6d55-5c19-bcc6">DC 2, Planetfall, Reinforced Armour, Transport. </characteristic>
+        <characteristic name="Rules" typeId="07bd-6d55-5c19-bcc6">DC 2, Planetfall, Reinforced Armour, Transport.</characteristic>
         <characteristic name="Equipment" typeId="3eb0-890a-3b3a-338f">Battlecannon, 4x Twin Heavy Bolter (2x FxF, 1x Left, 1x Right)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Twin Autocannon" typeId="ebd7-f24b-8ac6-42eb" typeName="Weapons (Ranged)" hidden="false" id="49f2-91c7-e6cb-0e29">
+      <characteristics>
+        <characteristic name="Range" typeId="67c2-b6d3-b1d1-b925">45cm</characteristic>
+        <characteristic name="AP" typeId="e1cc-bee1-e728-85d8">4+</characteristic>
+        <characteristic name="AT" typeId="5945-b9c9-7fdf-e4ca">5+</characteristic>
+        <characteristic name="AA" typeId="f306-a8b7-d57e-85df"/>
+        <characteristic name="MW" typeId="5999-cded-18fe-97b7"/>
+        <characteristic name="Abilities" typeId="10c3-b385-92b0-0bdc"/>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Flamer" typeId="ebd7-f24b-8ac6-42eb" typeName="Weapons (Ranged)" hidden="false" id="6788-e4f0-37ac-082a">
+      <characteristics>
+        <characteristic name="Range" typeId="67c2-b6d3-b1d1-b925">15cm</characteristic>
+        <characteristic name="AP" typeId="e1cc-bee1-e728-85d8">4+</characteristic>
+        <characteristic name="AT" typeId="5945-b9c9-7fdf-e4ca"/>
+        <characteristic name="AA" typeId="f306-a8b7-d57e-85df"/>
+        <characteristic name="MW" typeId="5999-cded-18fe-97b7"/>
+        <characteristic name="Abilities" typeId="10c3-b385-92b0-0bdc">Ignore Cover</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Flamer" typeId="ad8d-0895-d202-55c4" typeName="Weapons (Small Arms)" hidden="false" id="c93c-ca4a-db85-c6e5">
+      <characteristics>
+        <characteristic name="Extra Atks" typeId="5841-f3b0-34d7-ccae"/>
+        <characteristic name="Abilities" typeId="5022-1951-b56e-443b">Ignore Cover</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
   <entryLinks>
     <entryLink import="true" name="Tactical Marines" hidden="false" id="8db8-0cd9-f6f6-6e25" type="selectionEntry" targetId="4cc0-b1ed-b546-15b1">
       <categoryLinks>
-        <categoryLink targetId="ab32-cda5-f601-c1c0" id="2c24-1163-047d-adf0" primary="true" name="Codex Astartes Detachments"/>
+        <categoryLink targetId="ab32-cda5-f601-c1c0" id="2c24-1163-047d-adf0" primary="true" name="Codex Detachments"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Scouts" hidden="false" id="5004-2592-3f58-8b26" type="selectionEntry" targetId="dfcc-de81-7300-2091">
@@ -1612,96 +1847,227 @@
     </entryLink>
     <entryLink import="true" name="Bikes" hidden="false" id="fae6-7cb1-1d6f-06ec" type="selectionEntry" targetId="950d-e49f-bdf8-79d9">
       <categoryLinks>
-        <categoryLink targetId="ab32-cda5-f601-c1c0" id="b883-c833-95dc-cfd2" primary="true" name="Codex Astartes Detachments"/>
+        <categoryLink targetId="ab32-cda5-f601-c1c0" id="b883-c833-95dc-cfd2" primary="true" name="Codex Detachments"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Land Raider" hidden="false" id="f8ff-7e0e-d56b-db46" type="selectionEntry" targetId="5954-b6f2-33bc-55d8">
       <categoryLinks>
-        <categoryLink targetId="ab32-cda5-f601-c1c0" id="50cc-88e3-e5fd-9f25" primary="true" name="Codex Astartes Detachments"/>
+        <categoryLink targetId="ab32-cda5-f601-c1c0" id="50cc-88e3-e5fd-9f25" primary="true" name="Codex Detachments"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="20c4-f148-b275-902f" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f789-7665-1047-0947" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Space Wolves</comment>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Land Speeders" hidden="false" id="8a32-ae18-2e3b-8a7a" type="selectionEntry" targetId="4eff-74eb-7848-9e7c">
       <categoryLinks>
-        <categoryLink targetId="ab32-cda5-f601-c1c0" id="50a5-5c5a-c7d1-29da" primary="true" name="Codex Astartes Detachments"/>
+        <categoryLink targetId="ab32-cda5-f601-c1c0" id="50a5-5c5a-c7d1-29da" primary="true" name="Codex Detachments"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="20c4-f148-b275-902f" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f789-7665-1047-0947" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Space Wolves</comment>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Devastator Marines" hidden="false" id="9cdb-f84d-6d56-0fdf" type="selectionEntry" targetId="f3d2-4137-be7f-4589">
       <categoryLinks>
-        <categoryLink targetId="ab32-cda5-f601-c1c0" id="2ba4-fd3d-22b9-fdc9" primary="true" name="Codex Astartes Detachments"/>
+        <categoryLink targetId="ab32-cda5-f601-c1c0" id="2ba4-fd3d-22b9-fdc9" primary="true" name="Codex Detachments"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Predators" hidden="false" id="1676-8319-0a89-9c31" type="selectionEntry" targetId="f25a-14cc-b2dd-2a48">
       <categoryLinks>
-        <categoryLink targetId="ab32-cda5-f601-c1c0" id="17fb-adf4-009f-4247" primary="true" name="Codex Astartes Detachments"/>
+        <categoryLink targetId="ab32-cda5-f601-c1c0" id="17fb-adf4-009f-4247" primary="true" name="Codex Detachments"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="20c4-f148-b275-902f" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f789-7665-1047-0947" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Space Wolves</comment>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Terminators" hidden="false" id="8adc-738c-8837-2326" type="selectionEntry" targetId="093c-d17d-85a6-48fc">
       <categoryLinks>
-        <categoryLink targetId="ab32-cda5-f601-c1c0" id="0086-8c72-2e6a-b0ce" primary="true" name="Codex Astartes Detachments"/>
+        <categoryLink targetId="ab32-cda5-f601-c1c0" id="0086-8c72-2e6a-b0ce" primary="true" name="Codex Detachments"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Vindicators" hidden="false" id="a74a-88cf-4345-5f20" type="selectionEntry" targetId="e78f-7e11-2b2b-d133">
       <categoryLinks>
-        <categoryLink targetId="ab32-cda5-f601-c1c0" id="8a8c-87ff-3828-a01b" primary="true" name="Codex Astartes Detachments"/>
+        <categoryLink targetId="ab32-cda5-f601-c1c0" id="8a8c-87ff-3828-a01b" primary="true" name="Codex Detachments"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="20c4-f148-b275-902f" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f789-7665-1047-0947" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Space Wolves</comment>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Assault Marines" hidden="false" id="ab85-eda4-4bdf-5578" type="selectionEntry" targetId="fffa-317e-ee6e-77a3">
       <categoryLinks>
-        <categoryLink targetId="ab32-cda5-f601-c1c0" id="f8fa-7205-c1a5-abe1" primary="true" name="Codex Astartes Detachments"/>
+        <categoryLink targetId="ab32-cda5-f601-c1c0" id="f8fa-7205-c1a5-abe1" primary="true" name="Codex Detachments"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Whirlwinds" hidden="false" id="ebcd-c393-22bb-e28d" type="selectionEntry" targetId="1fc2-96f6-d31a-a350">
       <categoryLinks>
-        <categoryLink targetId="ab32-cda5-f601-c1c0" id="6367-fecd-1370-7fc5" primary="true" name="Codex Astartes Detachments"/>
+        <categoryLink targetId="ab32-cda5-f601-c1c0" id="6367-fecd-1370-7fc5" primary="true" name="Codex Detachments"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="20c4-f148-b275-902f" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f789-7665-1047-0947" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Space Wolves</comment>
+        </modifier>
+      </modifiers>
     </entryLink>
-    <entryLink import="true" name="Reaver Titan" hidden="false" id="9dac-d887-5f22-eb1f" type="selectionEntry" targetId="070c-8cd7-b786-879d">
+    <entryLink import="true" name="Reaver Titan" hidden="true" id="9dac-d887-5f22-eb1f" type="selectionEntry" targetId="070c-8cd7-b786-879d">
       <categoryLinks>
         <categoryLink targetId="51fa-6eb3-c418-1efe" id="8003-4803-fa80-1623" primary="false" name="Collegia Titanica"/>
-        <categoryLink targetId="ecb7-e9a1-295c-7807" id="2ab4-2336-5d45-7b92" primary="true" name="Support"/>
+        <categoryLink targetId="ecb7-e9a1-295c-7807" id="2ab4-2336-5d45-7b92" primary="true" name="Allies"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <localConditionGroups>
+            <localConditionGroup type="atLeast" value="1" scope="parent" field="selections" includeChildSelections="true" includeChildForces="true" repeats="1">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="6f6c-c0af-4fd0-1f05" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </localConditionGroup>
+          </localConditionGroups>
+        </modifier>
+      </modifiers>
     </entryLink>
-    <entryLink import="true" name="Warhound Titan" hidden="false" id="de3d-2475-60bc-adb1" type="selectionEntry" targetId="2650-51ea-3f8c-2abb">
+    <entryLink import="true" name="Warhound Titan" hidden="true" id="de3d-2475-60bc-adb1" type="selectionEntry" targetId="2650-51ea-3f8c-2abb">
       <categoryLinks>
         <categoryLink targetId="51fa-6eb3-c418-1efe" id="3df2-15d6-706f-0f44" primary="false" name="Collegia Titanica"/>
-        <categoryLink targetId="ecb7-e9a1-295c-7807" id="5ff8-4a2a-30e1-dd76" primary="true" name="Support"/>
+        <categoryLink targetId="ecb7-e9a1-295c-7807" id="5ff8-4a2a-30e1-dd76" primary="true" name="Allies"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <localConditionGroups>
+            <localConditionGroup type="atLeast" value="1" scope="parent" field="selections" includeChildSelections="true" includeChildForces="true" repeats="1">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="6f6c-c0af-4fd0-1f05" shared="true" includeChildSelections="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="f789-7665-1047-0947" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </localConditionGroup>
+          </localConditionGroups>
+        </modifier>
+      </modifiers>
     </entryLink>
-    <entryLink import="true" name="Marauder Squadron" hidden="false" id="35f6-33d8-2d6b-c06f" type="selectionEntry" targetId="5650-c332-15df-4436">
+    <entryLink import="true" name="Marauder Squadron" hidden="true" id="35f6-33d8-2d6b-c06f" type="selectionEntry" targetId="5650-c332-15df-4436">
       <categoryLinks>
         <categoryLink targetId="3235-f560-5b5c-876e" id="615c-deb7-3b0d-2dc7" primary="false" name="Imperial Navy"/>
         <categoryLink targetId="ecb7-e9a1-295c-7807" id="9857-9ff3-bc78-526f" primary="true" name="Allies"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <localConditionGroups>
+            <localConditionGroup type="atLeast" value="1" scope="parent" field="selections" includeChildSelections="true" includeChildForces="true" repeats="1">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="6f6c-c0af-4fd0-1f05" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </localConditionGroup>
+          </localConditionGroups>
+        </modifier>
+      </modifiers>
     </entryLink>
-    <entryLink import="true" name="Thunderbolt Squadron" hidden="false" id="b77b-fd50-4bb4-08b1" type="selectionEntry" targetId="9099-8eb8-d6a8-0b9b">
+    <entryLink import="true" name="Thunderbolt Squadron" hidden="true" id="b77b-fd50-4bb4-08b1" type="selectionEntry" targetId="9099-8eb8-d6a8-0b9b">
       <categoryLinks>
         <categoryLink targetId="ecb7-e9a1-295c-7807" id="12c4-cef8-9d32-df81" primary="true" name="Allies"/>
         <categoryLink targetId="3235-f560-5b5c-876e" id="6037-83a1-a272-3531" primary="false" name="Imperial Navy"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <localConditionGroups>
+            <localConditionGroup type="atLeast" value="1" scope="parent" field="selections" includeChildSelections="true" includeChildForces="true" repeats="1">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="6f6c-c0af-4fd0-1f05" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </localConditionGroup>
+          </localConditionGroups>
+        </modifier>
+      </modifiers>
     </entryLink>
-    <entryLink import="true" name="Storm Talons" hidden="false" id="4aac-f4e9-605b-bd65" type="selectionEntry" targetId="c3fd-09a8-4253-d376">
+    <entryLink import="true" name="Storm Talons" hidden="true" id="4aac-f4e9-605b-bd65" type="selectionEntry" targetId="c3fd-09a8-4253-d376">
       <categoryLinks>
         <categoryLink targetId="ecb7-e9a1-295c-7807" id="176d-90fe-42d8-72f5" primary="true" name="Allies"/>
         <categoryLink targetId="6efc-d58c-a102-abd4" id="d872-f5b4-8624-7954" primary="false" name="Codex Astartes Navy"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <localConditionGroups>
+            <localConditionGroup type="atLeast" value="1" scope="parent" field="selections" includeChildSelections="true" includeChildForces="true" repeats="1">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="6f6c-c0af-4fd0-1f05" shared="true" includeChildSelections="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="f789-7665-1047-0947" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </localConditionGroup>
+          </localConditionGroups>
+        </modifier>
+      </modifiers>
     </entryLink>
-    <entryLink import="true" name="Landing Craft" hidden="false" id="d2f6-f5ab-6a09-a86c" type="selectionEntry" targetId="7452-6661-2d1a-e7ad">
+    <entryLink import="true" name="Landing Craft" hidden="true" id="d2f6-f5ab-6a09-a86c" type="selectionEntry" targetId="7452-6661-2d1a-e7ad">
       <categoryLinks>
         <categoryLink targetId="ecb7-e9a1-295c-7807" id="5451-871b-cc13-8c5b" primary="true" name="Allies"/>
         <categoryLink targetId="6efc-d58c-a102-abd4" id="1dce-519e-c384-098c" primary="false" name="Codex Astartes Navy"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <localConditionGroups>
+            <localConditionGroup type="atLeast" value="1" scope="parent" field="selections" includeChildSelections="true" includeChildForces="true" repeats="1">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="6f6c-c0af-4fd0-1f05" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </localConditionGroup>
+          </localConditionGroups>
+        </modifier>
+      </modifiers>
     </entryLink>
-    <entryLink import="true" name="Thunderhawk" hidden="false" id="cd5e-3278-9a79-a214" type="selectionEntry" targetId="0651-a8a3-62bd-bf98">
+    <entryLink import="true" name="Thunderhawk" hidden="true" id="cd5e-3278-9a79-a214" type="selectionEntry" targetId="0651-a8a3-62bd-bf98">
       <categoryLinks>
         <categoryLink targetId="ecb7-e9a1-295c-7807" id="2504-8ec1-aa08-26e7" primary="true" name="Allies"/>
         <categoryLink targetId="6efc-d58c-a102-abd4" id="2f82-f67c-ca4a-4bec" primary="false" name="Codex Astartes Navy"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <localConditionGroups>
+            <localConditionGroup type="atLeast" value="1" scope="parent" field="selections" includeChildSelections="true" includeChildForces="true" repeats="1">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="6f6c-c0af-4fd0-1f05" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </localConditionGroup>
+          </localConditionGroups>
+        </modifier>
+      </modifiers>
     </entryLink>
-    <entryLink import="true" name="Orbital Support" hidden="false" id="8e2a-00a7-50b1-e04f" type="selectionEntry" targetId="fde2-cf95-b7e2-109f">
+    <entryLink import="true" name="Orbital Support" hidden="true" id="8e2a-00a7-50b1-e04f" type="selectionEntry" targetId="fde2-cf95-b7e2-109f">
       <categoryLinks>
         <categoryLink targetId="ecb7-e9a1-295c-7807" id="cc0d-6b72-01c2-63ec" primary="true" name="Allies"/>
         <categoryLink targetId="6efc-d58c-a102-abd4" id="4ded-266e-8491-d07f" primary="false" name="Codex Astartes Navy"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <localConditionGroups>
+            <localConditionGroup type="atLeast" value="1" scope="parent" field="selections" includeChildSelections="true" includeChildForces="true" repeats="1">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="6f6c-c0af-4fd0-1f05" shared="true" includeChildSelections="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="f789-7665-1047-0947" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </localConditionGroup>
+          </localConditionGroups>
+        </modifier>
+      </modifiers>
     </entryLink>
   </entryLinks>
   <sharedRules>
@@ -1716,11 +2082,17 @@
 - Space Marines formations only count half their number of Blaster markers in assault resolution (rounding down to a minimum of one). Halve the number of extra hits suffered by a Space Marine formation that loses an assault, rounding down in favour of the Space Marines.
 - When a broken Space Marine formation rallies, it receives a number of Blast Markers equal to the number of units, rather than half this number.</description>
     </rule>
+    <rule name="Pack Mentality" id="a2f2-84fc-eb65-beb4" hidden="false">
+      <description>Space Wolves Packs counts as having one character with the Inspiring special rule when they initiate an assault where they have another formation with the Pack Mentality special rule in support, or when they perform a combined assault where more than one formation in the assault has Pack Mentality. You will never receive more than plus one Inspiring from Pack Mentality, even if you do both a combined assault and have formations in support, or if you have multiple formations in support.</description>
+    </rule>
+    <rule name="Extended Command" id="d6b7-bd59-2d7a-d17a" hidden="false">
+      <description>Formations with at least one unit with the &apos;Extended Command&apos; ability extend the range at which Commanders within the formation can call other formations to follow them when they make a combined assault from 5cm to 15cm.</description>
+    </rule>
   </sharedRules>
   <forceEntries>
     <forceEntry name="Codex Astartes" id="6f6c-c0af-4fd0-1f05" hidden="false">
       <categoryLinks>
-        <categoryLink name="Codex Astartes Detachments" hidden="false" id="2bae-ebde-450c-e8f0" targetId="ab32-cda5-f601-c1c0"/>
+        <categoryLink name="Codex Detachments" hidden="false" id="2bae-ebde-450c-e8f0" targetId="ab32-cda5-f601-c1c0"/>
         <categoryLink name="Configuration" hidden="false" id="0b7b-5234-16ce-6e3b" targetId="74ff-55fd-16e5-6f79"/>
         <categoryLink name="Scout Detachments" hidden="false" id="d6e5-e76c-29dc-0aa8" targetId="8b3e-cb63-05c2-cff1">
           <constraints>
@@ -1737,7 +2109,7 @@
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Support" hidden="false" id="dea5-2f02-71d8-bab3" targetId="ecb7-e9a1-295c-7807" type="category"/>
+        <categoryLink name="Allies" hidden="false" id="dea5-2f02-71d8-bab3" targetId="ecb7-e9a1-295c-7807"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Space Wolves" id="f789-7665-1047-0947" hidden="false">
@@ -1745,11 +2117,17 @@
         <categoryLink name="Configuration" hidden="false" id="0163-2adf-dbac-12f0" targetId="74ff-55fd-16e5-6f79"/>
         <categoryLink name="Core Packs" hidden="false" id="a639-eaff-adfb-d807" targetId="4657-958e-5e9a-c66e"/>
         <categoryLink name="Elite Packs" hidden="false" id="761f-4ada-8d4b-bfee" targetId="4526-0873-d60f-3c6e">
+          <comment>Each no more than # of Hunting Packs</comment>
+        </categoryLink>
+        <categoryLink name="Allies" hidden="false" id="b298-f87d-30fd-a37c" targetId="ecb7-e9a1-295c-7807"/>
+        <categoryLink name="Support Packs" hidden="false" id="5f05-ae23-d38c-2984" targetId="20c4-f148-b275-902f" type="category">
           <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="078b-5cdd-a9ab-dc7f" percentValue="false"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d988-da05-9990-600a" percentValue="false">
+              <comment>1 per Core Pack</comment>
+            </constraint>
           </constraints>
           <modifiers>
-            <modifier type="increment" value="1" field="078b-5cdd-a9ab-dc7f">
+            <modifier type="increment" value="1" field="d988-da05-9990-600a">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="4657-958e-5e9a-c66e" childId="any" shared="true"/>
               </conditions>
@@ -1759,8 +2137,50 @@
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Support" hidden="false" id="b298-f87d-30fd-a37c" targetId="ecb7-e9a1-295c-7807"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Detachment Rules" hidden="false" id="bb12-c36d-3d6a-5fe3" defaultAmount="1">
+      <categoryLinks>
+        <categoryLink targetId="74ff-55fd-16e5-6f79" id="873c-960d-6b86-6793" primary="true" name="Configuration"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="They Shall Know No Fear" id="8710-45dc-a193-a353" hidden="false" type="rule" targetId="ed2a-e870-1533-2fe8"/>
+        <infoLink name="Pack Mentality" id="1174-868a-02e7-ae66" hidden="false" type="rule" targetId="a2f2-84fc-eb65-beb4">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="f789-7665-1047-0947" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <rules>
+        <rule name="Strategic Rating" id="fe27-d5c3-9d51-ab47" hidden="false">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="6f6c-c0af-4fd0-1f05" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>Space Marine armies have a Strategy Rating of 5. The Thunderbolt and Marauder Squadron formations have an Initiative Rating of 2+. All other formations have an Initiative Rating of 1+. The They Shall Know No Fear special rule applies to all Codex Astartes Detachments and Space Marine Aircraft formations.</description>
+          <comment>Codex Astartes</comment>
+        </rule>
+        <rule name="Strategic Rating" id="fd0c-3e78-4261-67d8" hidden="false">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="f789-7665-1047-0947" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Space Wolves</comment>
+          <description>Space Marine armies have a Strategy Rating of 5. All formations have an Initiative Rating of 1+. The They Shall Know No Fear special rule applies to all Space Wolves Packs and Aircraft formations. Pack Mentality applies to all Core and Elite Packs.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>
