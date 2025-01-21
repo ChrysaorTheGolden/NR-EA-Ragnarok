@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="7aab-b467-2ef6-4fc9" name="Drukhari" gameSystemId="771e-f644-a464-d479" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Detachment Rules" hidden="false" id="e409-329d-f8c6-cabc">
+      <categoryLinks>
+        <categoryLink targetId="74ff-55fd-16e5-6f79" id="6f99-8a75-5513-a27c" primary="true" name="Configuration"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <forceEntries>
+    <forceEntry name="Kabal of the Black Heart" id="394a-7c38-07ab-233b" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Special" hidden="false" id="d268-b185-ca2c-f916" targetId="ee1c-2e35-6e46-07f8" type="category"/>
+        <categoryLink name="Kabal" hidden="false" id="6169-c90c-2de9-7664" targetId="d634-75a7-5c75-b778" type="category"/>
+        <categoryLink name="Partisan" hidden="false" id="0f23-f1d5-d8f6-1d1c" targetId="33ee-f4f7-2a61-3a6a" type="category"/>
+        <categoryLink name="Comorragh Navy" hidden="false" id="73f0-63ce-5d06-3676" targetId="b5c6-af25-ae27-e9b6" type="category"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <categoryEntries>
+    <categoryEntry name="Kabal" id="d634-75a7-5c75-b778" hidden="false">
+      <comment>Black Heart</comment>
+    </categoryEntry>
+    <categoryEntry name="Partisan" id="33ee-f4f7-2a61-3a6a" hidden="false">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0ccb-154f-a0e4-2579"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="2" field="0ccb-154f-a0e4-2579">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="d634-75a7-5c75-b778" childId="any" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="d634-75a7-5c75-b778" childId="any" shared="true"/>
+          </conditions>
+          <comment>Max 2 per Kabal formation</comment>
+        </modifier>
+      </modifiers>
+      <comment>Black Heart</comment>
+    </categoryEntry>
+    <categoryEntry name="Comorragh Navy" id="b5c6-af25-ae27-e9b6" hidden="false">
+      <constraints>
+        <constraint type="max" value="33" field="45b2-f090-db05-c5d9" scope="force" shared="true" id="9e34-dc82-2236-862c" percentValue="true" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry name="Special" id="ee1c-2e35-6e46-07f8" hidden="false"/>
+  </categoryEntries>
+</catalogue>
