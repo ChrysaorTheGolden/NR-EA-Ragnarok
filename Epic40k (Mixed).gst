@@ -9,7 +9,7 @@
     <costType id="45b2-f090-db05-c5d9" name="Points" defaultCostLimit="-1" hidden="false"/>
   </costTypes>
   <profileTypes>
-    <profileType id="b57a-98c9-41e0-f24b" name="Model">
+    <profileType id="b57a-98c9-41e0-f24b" name="Model" sortIndex="1">
       <characteristicTypes>
         <characteristicType id="f15c-6890-7575-651e" name="Type"/>
         <characteristicType id="165b-58c0-5ac3-6c50" name="Speed"/>
@@ -20,7 +20,7 @@
         <characteristicType name="Equipment" id="3eb0-890a-3b3a-338f"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="ebd7-f24b-8ac6-42eb" name="Weapons (Ranged)">
+    <profileType id="ebd7-f24b-8ac6-42eb" name="Weapons (Ranged)" sortIndex="5">
       <characteristicTypes>
         <characteristicType id="67c2-b6d3-b1d1-b925" name="Range"/>
         <characteristicType id="e1cc-bee1-e728-85d8" name="AP"/>
@@ -30,49 +30,43 @@
         <characteristicType id="10c3-b385-92b0-0bdc" name="Abilities"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="ad8d-0895-d202-55c4" name="Weapons (Small Arms)">
+    <profileType id="ad8d-0895-d202-55c4" name="Weapons (Small Arms)" sortIndex="8">
       <characteristicTypes>
         <characteristicType id="5841-f3b0-34d7-ccae" name="Extra Atks"/>
         <characteristicType id="5022-1951-b56e-443b" name="Abilities"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="10c4-daac-d02e-996d" name="Ability">
+    <profileType id="10c4-daac-d02e-996d" name="Ability" sortIndex="9">
       <characteristicTypes>
         <characteristicType id="0d1d-6cd7-b0b6-4b9b" name="Description"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="20f2-e7fc-1dc3-0791" name="Formation">
-      <characteristicTypes>
-        <characteristicType id="1404-3ef0-8cb0-d63a" name="Name"/>
-        <characteristicType id="3882-b5ab-ee8d-4174" name="Initiative"/>
-      </characteristicTypes>
-    </profileType>
-    <profileType id="ec46-6d18-f9bd-7ebb" name="Weapons (Assault)">
+    <profileType id="ec46-6d18-f9bd-7ebb" name="Weapons (Assault)" sortIndex="7">
       <characteristicTypes>
         <characteristicType id="1d83-780b-2b25-0c16" name="Extra Atks"/>
         <characteristicType id="2383-92bb-359b-1b16" name="Abilities"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Character" id="b5d2-60ca-a5d3-1b33" hidden="false">
+    <profileType name="Character" id="b5d2-60ca-a5d3-1b33" hidden="false" sortIndex="2">
       <characteristicTypes>
         <characteristicType name="Abilities" id="64c6-a488-83d6-6c14"/>
         <characteristicType name="Equipment" id="c08d-dd74-0eb9-41c8"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Transport" id="5a0a-4615-39e2-6420" hidden="false">
+    <profileType name="Transport" id="5a0a-4615-39e2-6420" hidden="false" sortIndex="3">
       <characteristicTypes>
         <characteristicType name="Capacity" id="b3bb-b505-26ed-00cd"/>
         <characteristicType name="Restrictions" id="4482-4a52-916c-d3b2"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Weapons (Barrage)" id="7363-7d5b-635d-09d4" hidden="false">
+    <profileType name="Weapons (Barrage)" id="7363-7d5b-635d-09d4" hidden="false" sortIndex="6">
       <characteristicTypes>
         <characteristicType name="Range" id="56ed-6548-a2d5-f3c3"/>
         <characteristicType name="BP" id="dbd1-5b9d-d9bd-3464"/>
         <characteristicType name="Abilities" id="b01f-40e1-274d-83b6"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Critical Damage" id="01ad-b172-3746-07c4" hidden="false">
+    <profileType name="Critical Damage" id="01ad-b172-3746-07c4" hidden="false" sortIndex="4">
       <characteristicTypes>
         <characteristicType name="Effect" id="0c40-c40f-b4ae-46f9"/>
       </characteristicTypes>
