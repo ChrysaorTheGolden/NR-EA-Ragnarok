@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7fdc-de68-56be-b7cd" name="Space Marines" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="771e-f644-a464-d479" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="7fdc-de68-56be-b7cd" name="Space Marines" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="771e-f644-a464-d479" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry name="Codex Detachments" id="ab32-cda5-f601-c1c0" hidden="false">
       <comment>Codex Astartes</comment>
@@ -724,43 +724,8 @@
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a1b4-8e01-2bfc-f8d0-min" includeChildSelections="false"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a1b4-8e01-2bfc-f8d0-max" includeChildSelections="false"/>
           </constraints>
-          <profiles>
-            <profile name="Marauder Bomber" typeId="b57a-98c9-41e0-f24b" typeName="Model" hidden="false" id="b44b-01e9-16fb-63a2">
-              <characteristics>
-                <characteristic name="Type" typeId="f15c-6890-7575-651e">AC</characteristic>
-                <characteristic name="Speed" typeId="165b-58c0-5ac3-6c50">Bomber</characteristic>
-                <characteristic name="Armour" typeId="bc25-cf0e-2234-f5d9">4+</characteristic>
-                <characteristic name="CC" typeId="9212-a727-3a1f-ce25"/>
-                <characteristic name="FF" typeId="da0f-a17a-310b-b709"/>
-                <characteristic name="Rules" typeId="07bd-6d55-5c19-bcc6"/>
-                <characteristic name="Equipment" typeId="3eb0-890a-3b3a-338f">Twin Lascannon, Bomb Racks, 2x Twin Heavy Bolter Turret</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Bomb Racks" typeId="7363-7d5b-635d-09d4" typeName="Weapons (Barrage)" hidden="false" id="fbba-f4a7-332e-413f">
-              <characteristics>
-                <characteristic name="Range" typeId="56ed-6548-a2d5-f3c3">15cm</characteristic>
-                <characteristic name="BP" typeId="dbd1-5b9d-d9bd-3464">3</characteristic>
-                <characteristic name="Abilities" typeId="b01f-40e1-274d-83b6">FxF</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Twin Heavy Bolter Turret" typeId="ebd7-f24b-8ac6-42eb" typeName="Weapons (Ranged)" hidden="false" id="a746-6f4b-9c78-442d">
-              <characteristics>
-                <characteristic name="Range" typeId="67c2-b6d3-b1d1-b925">15cm</characteristic>
-                <characteristic name="AP" typeId="e1cc-bee1-e728-85d8"/>
-                <characteristic name="AT" typeId="5945-b9c9-7fdf-e4ca"/>
-                <characteristic name="AA" typeId="f306-a8b7-d57e-85df">5+</characteristic>
-                <characteristic name="MW" typeId="5999-cded-18fe-97b7"/>
-                <characteristic name="Abilities" typeId="10c3-b385-92b0-0bdc"/>
-              </characteristics>
-            </profile>
-          </profiles>
           <infoLinks>
-            <infoLink name="Twin Lascannon" id="1d1a-4d8d-6452-6d78" hidden="false" type="profile" targetId="a363-3f27-9967-2034">
-              <modifiers>
-                <modifier type="set" value="4+" field="f306-a8b7-d57e-85df"/>
-                <modifier type="set" value="FxF" field="10c3-b385-92b0-0bdc"/>
-              </modifiers>
-            </infoLink>
+            <infoLink targetId="d9ec-fc39-078a-108b" id="be08-ea62-fc6a-e7a8" type="infoGroup" name="Marauder Bomber" hidden="false"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -956,7 +921,7 @@
       <profiles>
         <profile name="Wolf Lord" typeId="b5d2-60ca-a5d3-1b33" typeName="Character" hidden="false" id="dfdc-2dbb-8b05-e9ce">
           <characteristics>
-            <characteristic name="Abilities" typeId="64c6-a488-83d6-6c14">Commander, Extended Command, Invulnerable Save, Leader. </characteristic>
+            <characteristic name="Abilities" typeId="64c6-a488-83d6-6c14">Commander, Extended Command, Invulnerable Save, Leader.</characteristic>
             <characteristic name="Equipment" typeId="c08d-dd74-0eb9-41c8">Power Weapon</characteristic>
           </characteristics>
         </profile>
@@ -1248,7 +1213,7 @@
                 <characteristic name="Armour" typeId="bc25-cf0e-2234-f5d9">3+</characteristic>
                 <characteristic name="CC" typeId="9212-a727-3a1f-ce25">3+</characteristic>
                 <characteristic name="FF" typeId="da0f-a17a-310b-b709">5+</characteristic>
-                <characteristic name="Rules" typeId="07bd-6d55-5c19-bcc6">Invulnerable Save, Mounted, Walker. Counts as Terminators for the purpose of being transported. </characteristic>
+                <characteristic name="Rules" typeId="07bd-6d55-5c19-bcc6">Invulnerable Save, Mounted, Walker. Counts as Terminators for the purpose of being transported.</characteristic>
                 <characteristic name="Equipment" typeId="3eb0-890a-3b3a-338f">Thunder Hammer, Storm Shield</characteristic>
               </characteristics>
             </profile>
@@ -1285,7 +1250,7 @@
                 <characteristic name="Armour" typeId="bc25-cf0e-2234-f5d9">4+</characteristic>
                 <characteristic name="CC" typeId="9212-a727-3a1f-ce25">3+</characteristic>
                 <characteristic name="FF" typeId="da0f-a17a-310b-b709">3+</characteristic>
-                <characteristic name="Rules" typeId="07bd-6d55-5c19-bcc6">Reinforced Armour, Thick Rear Armour. May be deployed in Drop Pods. </characteristic>
+                <characteristic name="Rules" typeId="07bd-6d55-5c19-bcc6">Reinforced Armour, Thick Rear Armour. May be deployed in Drop Pods.</characteristic>
                 <characteristic name="Equipment" typeId="3eb0-890a-3b3a-338f">2x Assault Cannon, Power Weapons</characteristic>
               </characteristics>
             </profile>
@@ -1483,7 +1448,7 @@
         </profile>
         <profile name="Stormwolf Assault Boat" typeId="01ad-b172-3746-07c4" typeName="Critical Damage" hidden="false" id="67c9-f372-e6e8-321b">
           <characteristics>
-            <characteristic name="Effect" typeId="0c40-c40f-b4ae-46f9">The Stormwolf and all units being carried are destroyed. </characteristic>
+            <characteristic name="Effect" typeId="0c40-c40f-b4ae-46f9">The Stormwolf and all units being carried are destroyed.</characteristic>
           </characteristics>
         </profile>
         <profile name="Stormwolf Assault Boat" typeId="5a0a-4615-39e2-6420" typeName="Transport" hidden="false" id="2228-11cd-36da-f1cd">
@@ -1542,7 +1507,7 @@
         </profile>
         <profile name="Stormfang Gunship" typeId="01ad-b172-3746-07c4" typeName="Critical Damage" hidden="false" id="4210-1ce5-b8bf-1f06">
           <characteristics>
-            <characteristic name="Effect" typeId="0c40-c40f-b4ae-46f9">The Stormfang is destroyed. </characteristic>
+            <characteristic name="Effect" typeId="0c40-c40f-b4ae-46f9">The Stormfang is destroyed.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1922,13 +1887,6 @@
         <characteristic name="Equipment" typeId="c08d-dd74-0eb9-41c8">Power Weapon</characteristic>
       </characteristics>
     </profile>
-    <profile name="Power Weapon" typeId="ec46-6d18-f9bd-7ebb" typeName="Weapons (Assault)" hidden="false" id="553e-3573-179b-9cc6">
-      <characteristics>
-        <characteristic name="Name" typeId="32e6-1008-8000-1d02">Power Weapon</characteristic>
-        <characteristic name="Extra Atks" typeId="1d83-780b-2b25-0c16">+1</characteristic>
-        <characteristic name="Abilities" typeId="2383-92bb-359b-1b16">MW</characteristic>
-      </characteristics>
-    </profile>
     <profile name="Land Raider" typeId="b57a-98c9-41e0-f24b" typeName="Model" hidden="false" id="2609-f46f-994f-75ea">
       <characteristics>
         <characteristic name="Type" typeId="f15c-6890-7575-651e">AV</characteristic>
@@ -1980,17 +1938,6 @@
       <characteristics>
         <characteristic name="Capacity" typeId="b3bb-b505-26ed-00cd">2/1</characteristic>
         <characteristic name="Restrictions" typeId="4482-4a52-916c-d3b2">2 Infantry (no jump pack/mounted), or 1 Terminator</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Twin Lascannon" typeId="ebd7-f24b-8ac6-42eb" typeName="Weapons (Ranged)" hidden="false" id="a363-3f27-9967-2034">
-      <characteristics>
-        <characteristic name="Range" typeId="67c2-b6d3-b1d1-b925">45cm</characteristic>
-        <characteristic name="AP" typeId="e1cc-bee1-e728-85d8"/>
-        <characteristic name="AT" typeId="5945-b9c9-7fdf-e4ca">4+</characteristic>
-        <characteristic name="AA" typeId="f306-a8b7-d57e-85df"/>
-        <characteristic name="MW" typeId="5999-cded-18fe-97b7"/>
-        <characteristic name="Abilities" typeId="10c3-b385-92b0-0bdc"/>
-        <characteristic typeId="336c-8433-dc2b-c511" name="New Characteristic Type"/>
       </characteristics>
     </profile>
     <profile name="Twin Heavy Bolter" typeId="ebd7-f24b-8ac6-42eb" typeName="Weapons (Ranged)" hidden="false" id="eee2-67f5-1488-e6b9">
@@ -2116,12 +2063,6 @@
         <characteristic name="Abilities" typeId="10c3-b385-92b0-0bdc"/>
       </characteristics>
     </profile>
-    <profile name="Power Fist" typeId="ec46-6d18-f9bd-7ebb" typeName="Weapons (Assault)" hidden="false" id="a078-7bd5-b944-cd5f">
-      <characteristics>
-        <characteristic name="Extra Atks" typeId="1d83-780b-2b25-0c16">+1</characteristic>
-        <characteristic name="Abilities" typeId="2383-92bb-359b-1b16">MW</characteristic>
-      </characteristics>
-    </profile>
     <profile name="Vindicator" typeId="b57a-98c9-41e0-f24b" typeName="Model" hidden="false" id="182f-bf32-6145-7f8c">
       <characteristics>
         <characteristic name="Type" typeId="f15c-6890-7575-651e">AV</characteristic>
@@ -2240,12 +2181,6 @@
         <characteristic name="Abilities" typeId="10c3-b385-92b0-0bdc"/>
       </characteristics>
     </profile>
-    <profile name="Multi-Melta" typeId="ad8d-0895-d202-55c4" typeName="Weapons (Small Arms)" hidden="false" id="f0e0-a08c-95ec-8b74">
-      <characteristics>
-        <characteristic name="Extra Atks" typeId="5841-f3b0-34d7-ccae"/>
-        <characteristic name="Abilities" typeId="5022-1951-b56e-443b">MW</characteristic>
-      </characteristics>
-    </profile>
     <profile name="Predator Annihilator" typeId="b57a-98c9-41e0-f24b" typeName="Model" hidden="false" id="ad86-775f-10ab-4ecb">
       <characteristics>
         <characteristic name="Type" typeId="f15c-6890-7575-651e">AV</characteristic>
@@ -2266,16 +2201,6 @@
         <characteristic name="FF" typeId="da0f-a17a-310b-b709">3+</characteristic>
         <characteristic name="Rules" typeId="07bd-6d55-5c19-bcc6"/>
         <characteristic name="Equipment" typeId="3eb0-890a-3b3a-338f">Predator Cannon, 2x Heavy Bolter</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Lascannon" typeId="ebd7-f24b-8ac6-42eb" typeName="Weapons (Ranged)" hidden="false" id="cf8d-8b26-22a5-e47c">
-      <characteristics>
-        <characteristic name="Range" typeId="67c2-b6d3-b1d1-b925">45cm</characteristic>
-        <characteristic name="AP" typeId="e1cc-bee1-e728-85d8"/>
-        <characteristic name="AT" typeId="5945-b9c9-7fdf-e4ca">5+</characteristic>
-        <characteristic name="AA" typeId="f306-a8b7-d57e-85df"/>
-        <characteristic name="MW" typeId="5999-cded-18fe-97b7"/>
-        <characteristic name="Abilities" typeId="10c3-b385-92b0-0bdc"/>
       </characteristics>
     </profile>
     <profile name="Predator Cannon" typeId="ebd7-f24b-8ac6-42eb" typeName="Weapons (Ranged)" hidden="false" id="da50-963d-3e80-121b">
@@ -2347,13 +2272,6 @@
         <characteristic name="Abilities" typeId="5022-1951-b56e-443b">Small Arms</characteristic>
       </characteristics>
     </profile>
-    <profile name="Chainsword" typeId="ec46-6d18-f9bd-7ebb" typeName="Weapons (Assault)" hidden="false" id="f9e2-c4e0-e889-90ea">
-      <characteristics>
-        <characteristic name="Extra Atks" typeId="1d83-780b-2b25-0c16"/>
-        <characteristic name="Abilities" typeId="2383-92bb-359b-1b16">Assault Weapon</characteristic>
-      </characteristics>
-      <alias>Chainswords</alias>
-    </profile>
     <profile name="Storm Talon" typeId="b57a-98c9-41e0-f24b" typeName="Model" hidden="false" id="ebb6-ae21-cd1c-4783">
       <characteristics>
         <characteristic name="Type" typeId="f15c-6890-7575-651e">Aircraft</characteristic>
@@ -2387,28 +2305,6 @@
       </characteristics>
       <comment>Aircraft variant</comment>
     </profile>
-    <profile name="Twin Heavy Bolter" typeId="ebd7-f24b-8ac6-42eb" typeName="Weapons (Ranged)" hidden="false" id="289b-7ae4-d2b9-8508">
-      <characteristics>
-        <characteristic name="Range" typeId="67c2-b6d3-b1d1-b925">45cm</characteristic>
-        <characteristic name="AP" typeId="e1cc-bee1-e728-85d8">4+</characteristic>
-        <characteristic name="AT" typeId="5945-b9c9-7fdf-e4ca"/>
-        <characteristic name="AA" typeId="f306-a8b7-d57e-85df">5+</characteristic>
-        <characteristic name="MW" typeId="5999-cded-18fe-97b7"/>
-        <characteristic name="Abilities" typeId="10c3-b385-92b0-0bdc"/>
-      </characteristics>
-      <comment>Aircraft variant</comment>
-    </profile>
-    <profile name="Thunderhawk" typeId="b57a-98c9-41e0-f24b" typeName="Model" hidden="false" id="65fe-7a8f-da10-8839">
-      <characteristics>
-        <characteristic name="Type" typeId="f15c-6890-7575-651e">AC/WE</characteristic>
-        <characteristic name="Speed" typeId="165b-58c0-5ac3-6c50">Bomber</characteristic>
-        <characteristic name="Armour" typeId="bc25-cf0e-2234-f5d9">4+</characteristic>
-        <characteristic name="CC" typeId="9212-a727-3a1f-ce25">6+</characteristic>
-        <characteristic name="FF" typeId="da0f-a17a-310b-b709">4+</characteristic>
-        <characteristic name="Rules" typeId="07bd-6d55-5c19-bcc6">DC 2, Planetfall, Reinforced Armour, Transport.</characteristic>
-        <characteristic name="Equipment" typeId="3eb0-890a-3b3a-338f">Battlecannon, 4x Twin Heavy Bolter (2x FxF, 1x Left, 1x Right)</characteristic>
-      </characteristics>
-    </profile>
     <profile name="Twin Autocannon" typeId="ebd7-f24b-8ac6-42eb" typeName="Weapons (Ranged)" hidden="false" id="49f2-91c7-e6cb-0e29">
       <characteristics>
         <characteristic name="Range" typeId="67c2-b6d3-b1d1-b925">45cm</characteristic>
@@ -2427,12 +2323,6 @@
         <characteristic name="AA" typeId="f306-a8b7-d57e-85df"/>
         <characteristic name="MW" typeId="5999-cded-18fe-97b7"/>
         <characteristic name="Abilities" typeId="10c3-b385-92b0-0bdc">Ignore Cover</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Heavy Flamer" typeId="ad8d-0895-d202-55c4" typeName="Weapons (Small Arms)" hidden="false" id="c93c-ca4a-db85-c6e5">
-      <characteristics>
-        <characteristic name="Extra Atks" typeId="5841-f3b0-34d7-ccae"/>
-        <characteristic name="Abilities" typeId="5022-1951-b56e-443b">Ignore Cover</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -2677,7 +2567,7 @@
         <categoryLink targetId="4657-958e-5e9a-c66e" id="0764-509f-e30a-1ba6" primary="true" name="Core Packs"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Blood Claw Assault Pack" hidden="false" id="9265-ce9c-752b-2e60" type="selectionEntry" targetId="75f9-215e-a434-2cf5">
+    <entryLink import="true" name="Sky Claw Assault Pack" hidden="false" id="9265-ce9c-752b-2e60" type="selectionEntry" targetId="75f9-215e-a434-2cf5">
       <categoryLinks>
         <categoryLink targetId="4657-958e-5e9a-c66e" id="7b1f-1f17-a077-c940" primary="true" name="Core Packs"/>
       </categoryLinks>
@@ -2797,7 +2687,7 @@
           <comment>Each no more than # of Hunting Packs</comment>
         </categoryLink>
         <categoryLink name="Allies" hidden="false" id="b298-f87d-30fd-a37c" targetId="ecb7-e9a1-295c-7807"/>
-        <categoryLink name="Support Packs" hidden="false" id="5f05-ae23-d38c-2984" targetId="20c4-f148-b275-902f" type="category">
+        <categoryLink name="Support Packs" hidden="false" id="5f05-ae23-d38c-2984" targetId="20c4-f148-b275-902f">
           <constraints>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d988-da05-9990-600a" percentValue="false">
               <comment>1 per Core Pack</comment>
@@ -2817,47 +2707,44 @@
       </categoryLinks>
     </forceEntry>
   </forceEntries>
-  <selectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Detachment Rules" hidden="false" id="bb12-c36d-3d6a-5fe3" defaultAmount="1">
-      <categoryLinks>
-        <categoryLink targetId="74ff-55fd-16e5-6f79" id="873c-960d-6b86-6793" primary="true" name="Configuration"/>
-      </categoryLinks>
-      <infoLinks>
-        <infoLink name="They Shall Know No Fear" id="8710-45dc-a193-a353" hidden="false" type="rule" targetId="ed2a-e870-1533-2fe8"/>
-        <infoLink name="Pack Mentality" id="1174-868a-02e7-ae66" hidden="false" type="rule" targetId="a2f2-84fc-eb65-beb4">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="f789-7665-1047-0947" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <rules>
-        <rule name="Strategic Rating" id="fe27-d5c3-9d51-ab47" hidden="false">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="6f6c-c0af-4fd0-1f05" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <description>Space Marine armies have a Strategy Rating of 5. The Thunderbolt and Marauder Squadron formations have an Initiative Rating of 2+. All other formations have an Initiative Rating of 1+. The They Shall Know No Fear special rule applies to all Codex Astartes Detachments and Space Marine Aircraft formations.</description>
-          <comment>Codex Astartes</comment>
-        </rule>
-        <rule name="Strategic Rating" id="fd0c-3e78-4261-67d8" hidden="false">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="f789-7665-1047-0947" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <comment>Space Wolves</comment>
-          <description>Space Marine armies have a Strategy Rating of 5. All formations have an Initiative Rating of 1+. The They Shall Know No Fear special rule applies to all Space Wolves Packs and Aircraft formations. Pack Mentality applies to all Core and Elite Packs.</description>
-        </rule>
-      </rules>
-    </selectionEntry>
-  </selectionEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Imperial Navy" id="e76b-aea2-0480-d6ea" targetId="450e-0a80-2c86-c91f"/>
+  </catalogueLinks>
+  <infoLinks>
+    <infoLink name="Pack Mentality" id="1174-868a-02e7-ae66" hidden="false" type="rule" targetId="a2f2-84fc-eb65-beb4">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="f789-7665-1047-0947" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <comment>Space Wolves</comment>
+    </infoLink>
+    <infoLink name="They Shall Know No Fear" id="8710-45dc-a193-a353" hidden="false" type="rule" targetId="ed2a-e870-1533-2fe8"/>
+  </infoLinks>
+  <rules>
+    <rule name="Strategic Rating" id="fe27-d5c3-9d51-ab47" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="6f6c-c0af-4fd0-1f05" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <description>Space Marine armies have a Strategy Rating of 5. The Thunderbolt and Marauder Squadron formations have an Initiative Rating of 2+. All other formations have an Initiative Rating of 1+. The They Shall Know No Fear special rule applies to all Codex Astartes Detachments and Space Marine Aircraft formations.</description>
+      <comment>Codex Astartes</comment>
+    </rule>
+    <rule name="Strategic Rating" id="fd0c-3e78-4261-67d8" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="f789-7665-1047-0947" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <comment>Space Wolves</comment>
+      <description>Space Marine armies have a Strategy Rating of 5. All formations have an Initiative Rating of 1+. The They Shall Know No Fear special rule applies to all Space Wolves Packs and Aircraft formations. Pack Mentality applies to all Core and Elite Packs.</description>
+    </rule>
+  </rules>
 </catalogue>

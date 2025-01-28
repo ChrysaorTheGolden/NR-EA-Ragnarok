@@ -81,9 +81,6 @@
     </categoryEntry>
     <categoryEntry id="74ff-55fd-16e5-6f79" name="Configuration" hidden="false"/>
   </categoryEntries>
-  <forceEntries>
-    <forceEntry name="Uncategorized" id="143c-9567-6b42-97c7" hidden="true"/>
-  </forceEntries>
   <sharedRules>
     <rule name="Character" id="4b50-0425-6de5-ac05" hidden="false">
       <description>Characters are upgrades to units, rather than units of their own. Any abilities of this character are considered in addition to the unit&apos;s own rules.</description>
@@ -123,6 +120,7 @@ Fearless units still count as part of a formation, and so will sometimes be &quo
     <rule name="Macro Weapon" id="a840-e70c-b9d0-8fae" hidden="false">
       <description>Only units with reinforced armour or invulnerable saves receive a saving throw against hits from a macro-weapon. On assault weapons with Extra Attacks, this only applies to the extra attacks, not the base attack.</description>
       <alias>MW</alias>
+      <alias>Macro-weapon</alias>
     </rule>
     <rule name="Supreme Commander" id="dc0b-cfc2-0a1c-80e9" hidden="false">
       <description>Supreme Commanders represent high-level command units. They count as commanders and leaders. 
@@ -228,6 +226,41 @@ In addition, if a War Engine regroups (either by performing a Hold or a Marshal 
     <rule name="Slow Firing" id="5923-24b9-fe88-3801" hidden="false">
       <alias>Slow</alias>
       <description>These weapons must take one turn to reload after they have fired. This means that if they fire on one turn they may not fire during the next.</description>
+    </rule>
+    <rule name="Titan Killer (dX)" id="1e83-1cbc-6a89-8855" hidden="false">
+      <description>As the Macro Weapon ability, except struck units may not take a cover or armour save at all, even if they have Reinforced Armour. (Note that Invulnerable Save and similar abilities still apply, and the -1 to hit modifier for cover still applies unless the weapon also has the Ignore Cover ability.)
+
+
+Further rules apply if the target unit is a War Engine or Heavy AV: 
+
+- When a hit with this weapon is allocated, roll the damage die associated with this ability. Inflict that many hits against the target instead. Continue assigning hits until rolled damage on a unit equals or exceeds its initial DC value.
+
+- For each hit, roll invulnerable saves and check for critical hits individually. Damage from this ability does not &quot;spill over&quot; to other models within the formation.</description>
+    </rule>
+    <rule name="Anti-Air" id="ced8-dbdb-8f2f-5a15" hidden="false" publicationId="56fe-b625-1acc-3460" page="Advanced Rules/Aerospace Operations: Aircraft">
+      <alias>AA</alias>
+      <alias>Anti Air</alias>
+      <description>Some weapons have an Anti-Aircraft (AA) value that can be used to shoot at aircraft in flight, and only at aircraft in flight. (You cannot use AA to attack landed aircraft or other types of unit.)
+- Aircraft with AA weapons can shoot at enemy aircraft they are intercepting (as part of CAP or Interception actions), or when making a flak attack (as a defensive reaction during a Ground Attack action).
+
+- Ground units may only shoot at aircraft when making a flak attack, and may not choose to shoot at aircraft formations as part of one of their actions. (This rule stops ground units rushing over to attack aircraft before they can disengage.)</description>
+    </rule>
+    <rule name="Support Craft" id="d8e8-1e79-61ca-6fcf" hidden="false">
+      <description>Support Craft units function identically to a Skimmer unit that is always popped up, in almost all respects including rules for shooting and line of fire. The only differences are that they automatically force a firefight in an assault (it is not a choice as with Skimmer units), and we assume that Support Craft transports (or the troops they carry) are appropriately equipped to embark and disembark troops as normal.
+
+
+Support Craft units are not aircraft — the Anti-Aircraft ability is not relevant for shooting at Support Craft units.</description>
+    </rule>
+    <rule name="Shield Disruptor" id="3ba6-6b5b-3acb-b489" hidden="false">
+      <description>Each point of damage from a hit with Shield Disruptor will knock down two Powerfields, Shadowfields or Void Shields. If a unit with only one field remaining is hit the field knocked down, but the hit does not carry over. In addition, Shield Disruptor hits ignores Deflector Shields and Ion Shields.</description>
+      <comment>from Vior&apos;la but I think used elsewhere in Ragnarok too?</comment>
+    </rule>
+    <rule name="Expendable" id="f82f-c68e-84d5-7874" hidden="false">
+      <description>If a formation does not contain only Expendable units, then Expendable units have the following rules.
+- Do not add a Blast marker to the parent formation when an Expendable unit is destroyed for any reason, including that of being out of coherency after a move.
+- Do not add the usual extra Blast marker if it is the first casualty of a Crossfire.
+- Do not add a Blast marker if the unit is hit by a weapon with the Disrupt ability.
+- Expendable units killed in an assault do count for the purposes of working out the result of the assault.</description>
     </rule>
   </sharedRules>
 </gameSystem>

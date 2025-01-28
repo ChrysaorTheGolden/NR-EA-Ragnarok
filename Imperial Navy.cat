@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="true" id="450e-0a80-2c86-c91f" name="Imperial Database" gameSystemId="771e-f644-a464-d479" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedInfoGroups>
+    <infoGroup name="Marauder Bomber" id="d9ec-fc39-078a-108b" hidden="false">
+      <infoLinks>
+        <infoLink name="Twin Lascannon" id="1d1a-4d8d-6452-6d78" hidden="false" type="profile" targetId="a363-3f27-9967-2034">
+          <modifiers>
+            <modifier type="set" value="4+" field="f306-a8b7-d57e-85df"/>
+            <modifier type="set" value="FxF" field="10c3-b385-92b0-0bdc"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile name="Twin Heavy Bolter Turret" typeId="ebd7-f24b-8ac6-42eb" typeName="Weapons (Ranged)" hidden="false" id="a746-6f4b-9c78-442d">
+          <characteristics>
+            <characteristic name="Range" typeId="67c2-b6d3-b1d1-b925">15cm</characteristic>
+            <characteristic name="AP" typeId="e1cc-bee1-e728-85d8"/>
+            <characteristic name="AT" typeId="5945-b9c9-7fdf-e4ca"/>
+            <characteristic name="AA" typeId="f306-a8b7-d57e-85df">5+</characteristic>
+            <characteristic name="MW" typeId="5999-cded-18fe-97b7"/>
+            <characteristic name="Abilities" typeId="10c3-b385-92b0-0bdc"/>
+          </characteristics>
+        </profile>
+        <profile name="Bomb Racks" typeId="7363-7d5b-635d-09d4" typeName="Weapons (Barrage)" hidden="false" id="fbba-f4a7-332e-413f">
+          <characteristics>
+            <characteristic name="Range" typeId="56ed-6548-a2d5-f3c3">15cm</characteristic>
+            <characteristic name="BP" typeId="dbd1-5b9d-d9bd-3464">3</characteristic>
+            <characteristic name="Abilities" typeId="b01f-40e1-274d-83b6">FxF</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Marauder Bomber" typeId="b57a-98c9-41e0-f24b" typeName="Model" hidden="false" id="b44b-01e9-16fb-63a2">
+          <characteristics>
+            <characteristic name="Type" typeId="f15c-6890-7575-651e">AC</characteristic>
+            <characteristic name="Speed" typeId="165b-58c0-5ac3-6c50">Bomber</characteristic>
+            <characteristic name="Armour" typeId="bc25-cf0e-2234-f5d9">4+</characteristic>
+            <characteristic name="CC" typeId="9212-a727-3a1f-ce25"/>
+            <characteristic name="FF" typeId="da0f-a17a-310b-b709"/>
+            <characteristic name="Rules" typeId="07bd-6d55-5c19-bcc6"/>
+            <characteristic name="Equipment" typeId="3eb0-890a-3b3a-338f">Twin Lascannon, Bomb Racks, 2x Twin Heavy Bolter Turret</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </infoGroup>
+  </sharedInfoGroups>
+  <sharedProfiles>
+    <profile name="Lascannon" typeId="ebd7-f24b-8ac6-42eb" typeName="Weapons (Ranged)" hidden="false" id="cf8d-8b26-22a5-e47c">
+      <characteristics>
+        <characteristic name="Range" typeId="67c2-b6d3-b1d1-b925">45cm</characteristic>
+        <characteristic name="AP" typeId="e1cc-bee1-e728-85d8"/>
+        <characteristic name="AT" typeId="5945-b9c9-7fdf-e4ca">5+</characteristic>
+        <characteristic name="AA" typeId="f306-a8b7-d57e-85df"/>
+        <characteristic name="MW" typeId="5999-cded-18fe-97b7"/>
+        <characteristic name="Abilities" typeId="10c3-b385-92b0-0bdc"/>
+      </characteristics>
+    </profile>
+    <profile name="Twin Lascannon" typeId="ebd7-f24b-8ac6-42eb" typeName="Weapons (Ranged)" hidden="false" id="a363-3f27-9967-2034">
+      <characteristics>
+        <characteristic name="Range" typeId="67c2-b6d3-b1d1-b925">45cm</characteristic>
+        <characteristic name="AP" typeId="e1cc-bee1-e728-85d8"/>
+        <characteristic name="AT" typeId="5945-b9c9-7fdf-e4ca">4+</characteristic>
+        <characteristic name="AA" typeId="f306-a8b7-d57e-85df"/>
+        <characteristic name="MW" typeId="5999-cded-18fe-97b7"/>
+        <characteristic name="Abilities" typeId="10c3-b385-92b0-0bdc"/>
+        <characteristic typeId="336c-8433-dc2b-c511" name="New Characteristic Type"/>
+      </characteristics>
+    </profile>
+    <profile name="Twin Heavy Bolter" typeId="ebd7-f24b-8ac6-42eb" typeName="Weapons (Ranged)" hidden="false" id="289b-7ae4-d2b9-8508">
+      <characteristics>
+        <characteristic name="Range" typeId="67c2-b6d3-b1d1-b925">45cm</characteristic>
+        <characteristic name="AP" typeId="e1cc-bee1-e728-85d8">4+</characteristic>
+        <characteristic name="AT" typeId="5945-b9c9-7fdf-e4ca"/>
+        <characteristic name="AA" typeId="f306-a8b7-d57e-85df">5+</characteristic>
+        <characteristic name="MW" typeId="5999-cded-18fe-97b7"/>
+        <characteristic name="Abilities" typeId="10c3-b385-92b0-0bdc"/>
+      </characteristics>
+      <comment>Aircraft variant</comment>
+    </profile>
+    <profile name="Heavy Flamer" typeId="ad8d-0895-d202-55c4" typeName="Weapons (Small Arms)" hidden="false" id="c93c-ca4a-db85-c6e5">
+      <characteristics>
+        <characteristic name="Extra Atks" typeId="5841-f3b0-34d7-ccae"/>
+        <characteristic name="Abilities" typeId="5022-1951-b56e-443b">Ignore Cover</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Multi-Melta" typeId="ad8d-0895-d202-55c4" typeName="Weapons (Small Arms)" hidden="false" id="f0e0-a08c-95ec-8b74">
+      <characteristics>
+        <characteristic name="Extra Atks" typeId="5841-f3b0-34d7-ccae"/>
+        <characteristic name="Abilities" typeId="5022-1951-b56e-443b">MW</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Power Weapon" typeId="ec46-6d18-f9bd-7ebb" typeName="Weapons (Assault)" hidden="false" id="553e-3573-179b-9cc6">
+      <characteristics>
+        <characteristic name="Name" typeId="32e6-1008-8000-1d02">Power Weapon</characteristic>
+        <characteristic name="Extra Atks" typeId="1d83-780b-2b25-0c16">+1</characteristic>
+        <characteristic name="Abilities" typeId="2383-92bb-359b-1b16">MW</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Power Fist" typeId="ec46-6d18-f9bd-7ebb" typeName="Weapons (Assault)" hidden="false" id="a078-7bd5-b944-cd5f">
+      <characteristics>
+        <characteristic name="Extra Atks" typeId="1d83-780b-2b25-0c16">+1</characteristic>
+        <characteristic name="Abilities" typeId="2383-92bb-359b-1b16">MW</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Chainsword" typeId="ec46-6d18-f9bd-7ebb" typeName="Weapons (Assault)" hidden="false" id="f9e2-c4e0-e889-90ea">
+      <characteristics>
+        <characteristic name="Extra Atks" typeId="1d83-780b-2b25-0c16"/>
+        <characteristic name="Abilities" typeId="2383-92bb-359b-1b16">Assault Weapon</characteristic>
+      </characteristics>
+      <alias>Chainswords</alias>
+    </profile>
+    <profile name="Thunderhawk" typeId="b57a-98c9-41e0-f24b" typeName="Model" hidden="false" id="65fe-7a8f-da10-8839">
+      <characteristics>
+        <characteristic name="Type" typeId="f15c-6890-7575-651e">AC/WE</characteristic>
+        <characteristic name="Speed" typeId="165b-58c0-5ac3-6c50">Bomber</characteristic>
+        <characteristic name="Armour" typeId="bc25-cf0e-2234-f5d9">4+</characteristic>
+        <characteristic name="CC" typeId="9212-a727-3a1f-ce25">6+</characteristic>
+        <characteristic name="FF" typeId="da0f-a17a-310b-b709">4+</characteristic>
+        <characteristic name="Rules" typeId="07bd-6d55-5c19-bcc6">DC 2, Planetfall, Reinforced Armour, Transport.</characteristic>
+        <characteristic name="Equipment" typeId="3eb0-890a-3b3a-338f">Battlecannon, 4x Twin Heavy Bolter (2x FxF, 1x Left, 1x Right)</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>
